@@ -63,7 +63,6 @@ def instalar():
     os.system('cd /home/$USER/dotfiles-nimeavles')
     os.system('rm -r /home/$USER/.config/qtile')
     os.system('cp -r qtile/ /home/$USER/.config')
-    os.system('rm -r /home/$USER/.config/alacritty')
     os.system('cp -r alacritty/ /home/$USER/.config')
     os.system('cp -r rofi /home/$USER/.config')
     os.system('git clone https://github.com/ryanoasis/nerd-fonts /home/$USER/fonts')
