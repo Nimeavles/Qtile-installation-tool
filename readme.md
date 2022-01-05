@@ -1,4 +1,4 @@
-#Qtile Installation Tool
+# Qtile Installation Tool
 
 Este scipt instala mis configuraciones de qtile, hay ciertas partes las cuales no las instala el script, pero te dejo los pasos a seguir por aquí.
 
@@ -6,7 +6,7 @@ Este scipt instala mis configuraciones de qtile, hay ciertas partes las cuales n
 
 >**El script solo funciona en archlinux, si quieres ejecutarlo en otro Sistema Operativo que no este basado en archlinux, tendrás que cambiar la línea de código **`os.system('sudo pacman -S git python-psutil neovim zsh alacritty rofi curl udiskie feh thunar xorg-xinit pulseaudio')`** por el gestor de paquetes de tu distribución, por ejemplo si usas una distribución de GNU/Linux basada en debian usarás el `apt` si usas fedora usarás `dnf` y así con las demás** 
 
-####Si usas archlinux, puedes ignorar el paso anterior.
+#### Si usas archlinux, puedes ignorar el paso anterior.
 
 > *Para instalar el script tendrás que seguir estos pasos:*
 * `sudo pacman -S python`
@@ -14,7 +14,7 @@ Este scipt instala mis configuraciones de qtile, hay ciertas partes las cuales n
 * `cd /home/$USER/script-qtile`
 * `python3 script.py`
 >Automáticamente se te desplegará este menú en un programa de CLI:
-![image](/home/nimeavles/script/img.png)
+![image](img.png)
 
 >*Una vez completes el script, puedes seguir con la perzonalización pero de forma manual. **El script instala zsh con mis configuraciones, qtile y mis configuraciones, la fuente Ubuntu Nerd Font, rofi con una configuracion copiada de `Antonio Sarosi` y un xsession con permisos de ejecución.** Para instalar temas puedes ir a este sitio web creado por gnome y descargar el tema gtk con sus iconos que desees, el enlace es este:*
 
