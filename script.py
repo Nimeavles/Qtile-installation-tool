@@ -58,7 +58,7 @@ def menu():
         exit()
 
 def instalar():
-    os.system('sudo pacman -S git python-psutil neovim zsh alacritty rofi curl udiskie feh thunar xorg-xinit pulseaudio')
+    os.system('sudo pacman -S git python-psutil neovim zsh alacritty rofi curl udiskie feh thunar xorg-xinit pulseaudio exa bat')
     os.system('git clone https://github.com/Nimeavles/Dotfiles /home/$USER/dotfiles-nimeavles')
     os.system('cd /home/$USER/dotfiles-nimeavles')
     os.system('rm -r /home/$USER/.config/qtile')
@@ -71,6 +71,8 @@ def instalar():
     os.system('sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"')
     os.system('git clone https://github.com/romkatv/powerlevel10k.git ~/$ZSH_CUSTOM/themes/powerlevel10k')
     os.system('rm /home/$USER/.zshrc')
+    os.system('git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting')
+    os.system('git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions')
     os.system('cp .zshrc /home/$USER')
     os.system('cp .xsession /home/$USER')
     os.system('chmod u+x /home/$USER/.xsession')
